@@ -5,7 +5,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "typecheck": "tsc",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "jest-preview": "jest-preview",
     "test:preview": "npm-run-all -p test jest-preview"
   },
