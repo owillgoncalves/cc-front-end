@@ -10,7 +10,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+      className={`flex gap-2 items-center ${sizeClasses[size]} ${variantClasses[variant]} ${className} hover:shadow-lg hover:scale-[1.02] transition-all duration-100 active:scale-[0.98]`}
       {...props}
     >
       {children}
