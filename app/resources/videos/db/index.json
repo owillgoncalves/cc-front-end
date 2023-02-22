@@ -1,0 +1,80 @@
+[
+  {
+    "id": "i6JxEFATTHk",
+    "category": "Início rápido",
+    "title": "Tutorial Web: Convidando uma pessoa para ter acesso à obra",
+    "description": "Nesse vídeo, você aprenderá a convidar uma pessoa para ter acesso a sua obra, escolhendo as configurações de permissões, acesso a disciplinas e áreas específicas e muito mais."
+  },
+  {
+    "id": "nJHwzwnx-f8",
+    "category": "Início rápido",
+    "title": "Tutorial Web: Configurações de conta - Informações pessoais, notificações e senha",
+    "description": "Olá! Agora vamos falar sobre como configurar a sua conta. Nesse vídeo você verá como configurar as suas informações pessoais, as notificações e como alterar a sua senha."
+  },
+  {
+    "id": "2DgoMr3rpDc",
+    "category": "Documentos",
+    "title": "Tutorial Web: Compartilhando documentos",
+    "description": "Neste vídeo você aprenderá a compartilhar documentos com pessoas internas e, ou, externas à obra."
+  },
+  {
+    "id": "4RtThKbXJXA",
+    "category": "Documentos",
+    "title": "Tutorial Web: Enviando documentos",
+    "description": "Neste vídeo você aprenderá a enviar um novo documento diretamente para a ConstruCode."
+  },
+  {
+    "id": "63Qs8lbubc0",
+    "category": "Documentos",
+    "title": "Tutorial Web: Verificar os novos documentos enviados e atualizados",
+    "description": "Nesse vídeo, você aprenderá a verificar os novos documentos enviados e atualizados."
+  },
+  {
+    "id": "cgeo8sZEec4",
+    "category": "Documentos",
+    "title": "Tutorial Web: Imprimindo placas de obra com os códigos QR",
+    "description": "Nesse vídeo, você aprenderá a imprimir as placas de obra com os códigos QR."
+  },
+  {
+    "id": "ErDIhQdV1lk",
+    "category": "Documentos",
+    "title": "Tutorial Web: Criando áreas e grupos de áreas",
+    "description": "Nesse tutorial você aprenderá a criar áreas e grupos de áreas com um passo a passo simples e rápido."
+  },
+  {
+    "id": "L7TCHk3UEQM",
+    "category": "Documentos",
+    "title": "Tutorial Web: Procurando por um documento",
+    "description": "Neste vídeo mostraremos como você pode procurar por um documento dentro da nossa plataforma."
+  },
+  {
+    "id": "WuzrKljIh4Q",
+    "category": "Documentos",
+    "title": "Tutorial Web: Editando Documentos",
+    "description": "Neste vídeo, você aprenderá a editar os documentos da sua obra."
+  },
+  {
+    "id": "Z56i64LS9R4",
+    "category": "Documentos",
+    "title": "Tutorial Web: Compartilhando documentos",
+    "description": "Nesse tutorial você verá como reposicionar o código QR para impressão rapidamente."
+  },
+  {
+    "id": "IoeOIyyfpL4",
+    "category": "Impressos",
+    "title": "Tutorial Web: Rastreio de impressos - Gerenciando os documentos solicitados",
+    "description": "Essa é a continuação do vídeo “enviando documentos para impressão” e agora vou mostrar como fazer o controle dos documentos enviados para plotagem!"
+  },
+  {
+    "id": "MjRwcpZ63tM",
+    "category": "Impressos",
+    "title": "Tutorial Web: Rastreio de impressos - Enviando documentos para impressão",
+    "description": "Agora vou mostrar como rastrear automaticamente todos os documentos impressos na sua obra!"
+  },
+  {
+    "id": "ZQ1CTBMu1HE",
+    "category": "Registro Diário de Obra - RDO",
+    "title": "Tutorial Web: Criando o primeiro Registro Diário de Obra - RDO",
+    "description": "Neste vídeo você aprenderá a criar o seu primeiro Registro Diário de Obra, além de saber como replicar e editar."
+  }
+]
