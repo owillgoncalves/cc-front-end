@@ -1,4 +1,5 @@
 import db from "../db/index.json";
+import type { VideoWithoutThumbProps } from "../types";
 
 type FindOptions = {
   limit?: number;
@@ -12,8 +13,10 @@ type GetOptions = {
   select: string;
 };
 
-export const find = async (options?: FindOptions) => {
-  const videos = db;
+export const find = async (
+  options?: FindOptions
+): Promise<VideoWithoutThumbProps[]> => {
+  const videos: VideoWithoutThumbProps[] = db;
   if (!options) return videos;
   const {
     limit = videos.length,
@@ -25,35 +28,34 @@ export const find = async (options?: FindOptions) => {
   return videos
     .filter((video) => video[searchBy].includes(search))
     .slice((page - 1) * limit, page * limit)
-    .map((video: Record<string, string>) => {
+    .map((video) => {
       if (!select) return video;
       const selectKeys = select.split(",");
-      const selected = selectKeys.reduce(
-        (acc: Record<string, string>, key: string) => {
-          acc[key] = video[key];
-          return acc;
-        },
-        {}
-      );
+      const selected = selectKeys.reduce((acc, key) => {
+        acc[key as keyof VideoWithoutThumbProps] =
+          video[key as keyof VideoWithoutThumbProps];
+        return acc;
+      }, {} as VideoWithoutThumbProps);
       return selected;
     });
 };
 
-export const get = async (id: string, options?: GetOptions) => {
-  const videos = db;
-  let video: Record<string, string> =
-    videos.find((video) => video.id === id) || {};
+export const get = async (
+  id: string,
+  options?: GetOptions
+): Promise<VideoWithoutThumbProps> => {
+  const videos: VideoWithoutThumbProps[] = db;
+  let video =
+    videos.find((video) => video.id === id) || ({} as VideoWithoutThumbProps);
   if (video.id) {
     if (!options) return video;
     const { select } = options;
     const selectKeys = select.split(",");
-    const selected = selectKeys.reduce(
-      (acc: Record<string, string>, key: string) => {
-        acc[key] = video[key];
-        return acc;
-      },
-      {}
-    );
+    const selected = selectKeys.reduce((acc, key) => {
+      acc[key as keyof VideoWithoutThumbProps] =
+        video[key as keyof VideoWithoutThumbProps];
+      return acc;
+    }, {} as VideoWithoutThumbProps);
     return selected;
   }
   throw new Error("Video not found");
