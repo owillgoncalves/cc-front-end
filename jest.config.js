@@ -26,7 +26,7 @@ module.exports = {
       },
       testEnvironment: "node",
       // *.spec files are for server unit tests
-      testMatch: ['**/__tests__/**/*.spec.{js,jsx,ts,tsx}'],
+      testMatch: ['**/*.spec.{js,jsx,ts,tsx}'],
     },
     {
       displayName: "UI",
@@ -47,7 +47,7 @@ module.exports = {
       ],
       testEnvironment: 'jsdom',
       // *.test files are for client unit tests
-      testMatch: ['**/__tests__/**/*.test.{js,jsx,ts,tsx}'],
+      testMatch: ['**/*.test.{js,jsx,ts,tsx}'],
       transform: {
         '^.+\\.(js|jsx|ts|tsx)$': '@swc/jest',
         '^.+\\.(css|scss|sass|less)$': 'jest-preview/transforms/css',

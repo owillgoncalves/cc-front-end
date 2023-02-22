@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { HeaderProps } from "~/resources/common/types";
-import Header from "../../Header";
+import Header from "~/resources/common/components/Header";
+import type { HeaderProps } from "~/resources/common/types";
 
 // This is a workaround to avoid the following error:
 // Uncaught [Error: useLocation() may be used only in the context of a <Router> component.]

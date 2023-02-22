@@ -1,4 +1,4 @@
-import { loader } from "../index";
+import { loader } from "~/routes";
 
 describe("index route", () => {
   it("should redirect to videos page", async () => {
