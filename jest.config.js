@@ -6,10 +6,6 @@ module.exports = {
   projects: [
     {
       displayName: "SERVER",
-      clearMocks: true,
-      collectCoverage: true,
-      coverageDirectory: "coverage",
-      coverageProvider: "v8",
       setupFilesAfterEnv: [fromRoot('jest.setup.ts')],
       moduleDirectories: ["node_modules", fromRoot("tests")],
       moduleNameMapper: {
@@ -26,18 +22,14 @@ module.exports = {
       },
       testEnvironment: "node",
       // *.spec files are for server unit tests
-      testMatch: ['**/__tests__/**/*.spec.{js,jsx,ts,tsx}'],
+      testMatch: ['**/*.spec.{js,jsx,ts,tsx}'],
     },
     {
       displayName: "UI",
-      collectCoverageFrom: [
-        '**/*.{js,jsx,ts,tsx}',
-        '!**/*.d.ts',
-        '!**/node_modules/**',
-      ],
       moduleNameMapper: {
         // Handle absolute imports in Remix
         '~/(.*)': fromRoot('app/$1'),
+        "tests/(.*)": fromRoot("tests/$1"),
       },
       setupFilesAfterEnv: [fromRoot('jest.setup.js')],
       testPathIgnorePatterns: [
@@ -47,7 +39,7 @@ module.exports = {
       ],
       testEnvironment: 'jsdom',
       // *.test files are for client unit tests
-      testMatch: ['**/__tests__/**/*.test.{js,jsx,ts,tsx}'],
+      testMatch: ['**/*.test.{js,jsx,ts,tsx}'],
       transform: {
         '^.+\\.(js|jsx|ts|tsx)$': '@swc/jest',
         '^.+\\.(css|scss|sass|less)$': 'jest-preview/transforms/css',
