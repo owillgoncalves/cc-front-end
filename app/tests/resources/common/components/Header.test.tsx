@@ -44,7 +44,7 @@ describe("Header Component", () => {
     permanentHeaderAssertions(header, construCodeLogo, navigation);
     const { videosLink, faqLink, termsLink } = getHeaderBaseLinks(header);
     baseLinksAssertions(videosLink, faqLink, termsLink);
-    const testLink = header.getElementsByTagName("a")[3];
+    const testLink = header.getElementsByTagName("a")[4];
     textLinksAssertions(testLink);
   });
   it("should render overriding links", () => {
@@ -62,8 +62,8 @@ describe("Header Component", () => {
       getPermanentHeaderElements();
     permanentHeaderAssertions(header, construCodeLogo, navigation);
     const anchorList = header.getElementsByTagName("a");
-    expect(anchorList).toHaveLength(1);
-    const [testLink] = anchorList;
+    expect(anchorList).toHaveLength(2);
+    const [,testLink] = anchorList;
     textLinksAssertions(testLink);
   });
 });

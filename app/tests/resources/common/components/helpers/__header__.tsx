@@ -30,7 +30,7 @@ export const getPermanentHeaderElements = () => {
 };
 
 export const getHeaderBaseLinks = (header: HTMLElement) => {
-  const [videosLink, faqLink, termsLink] = header.getElementsByTagName("a");
+  const [, videosLink, faqLink, termsLink] = header.getElementsByTagName("a");
   return {
     videosLink,
     faqLink,

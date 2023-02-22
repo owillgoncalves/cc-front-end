@@ -14,7 +14,9 @@ export default function Header({
   return (
     <header className="flex h-20 items-center border-b-[1px] border-primary bg-secondary lg:h-24">
       <div className="container mx-auto my-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <img src={logo} alt="ConstruCode" />
+        <Link to="/">
+          <img src={logo} alt="ConstruCode" />
+        </Link>
         <nav className="flex items-center justify-end space-x-16">
           {linksToRender?.map((link) => (
             <Link
