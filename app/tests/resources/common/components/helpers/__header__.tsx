@@ -1,14 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
 import Header from "~/resources/common/components/Header";
 import type { HeaderProps } from "~/resources/common/types";
-
-// This is a workaround to avoid the following error:
-// Uncaught [Error: useLocation() may be used only in the context of a <Router> component.]
-
-export function FakeRouter({ children }: { children: React.ReactNode }) {
-  return <BrowserRouter>{children}</BrowserRouter>;
-}
+import { FakeRouter } from "./__common__";
 
 export function renderHeader(props?: HeaderProps) {
   render(
