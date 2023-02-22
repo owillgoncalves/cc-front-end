@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           Suporte via chat
         </Button>
       </Header>
-      <main className="container mx-auto max-w-7xl flex-1 px-4 sm:px-6 lg:px-8">
+      <main className="flex-1">
         {children}
       </main>
       <Footer />
