@@ -12,7 +12,7 @@ describe("Button Component", () => {
   });
   it("should render with secondary variant", () => {
     renderButton({ variant: "secondary" });
-    assertButtonVariant("py-2 px-4 text-xl h-12 rounded-md bg-secondary text-primary");
+    assertButtonVariant("py-2 px-4 text-xl h-12 rounded-md bg-secondary-dark text-primary");
   });
   it("should render with small size", () => {
     renderButton({ size: "small" });

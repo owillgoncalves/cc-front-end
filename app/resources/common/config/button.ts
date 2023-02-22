@@ -6,5 +6,5 @@ export const sizeClasses: Record<string, string> = {
 export const variantClasses: Record<string, string> = {
   primary: "bg-primary text-white",
   lighter: "bg-primary-lighter text-primary",
-  secondary: "bg-secondary text-primary",
+  secondary: "bg-secondary-dark text-primary",
 };
